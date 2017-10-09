@@ -26,7 +26,7 @@ function decrement(amount) {
 }
 
 function reset() {
-  return { type: "RESET" };
+  return { type: "RESET", amount:0 };
 }
 
 const store = createStore(reducer, initialState);
